@@ -3,6 +3,12 @@
 #include <GameEngineBase/GameEngineDebug.h>
 #include <conio.h>
 
+void GameLoop() 
+{
+	Rectangle(GameEngineWindow::GETDC(), 100, 100, 200, 200);
+}
+
+
 // main함수를 오버로딩 해서 사용한것
 // 기본 win 프로젝트를 만들면 wWinMain으로 나오는데 이 w는 유니코드라는 의미이고 멀티바이트를 사용하기위해 w를 뺀 버전을 사용
 int APIENTRY WinMain(_In_ HINSTANCE hInstance,
@@ -14,12 +20,7 @@ int APIENTRY WinMain(_In_ HINSTANCE hInstance,
 
 	GameEngineWindow::GetInst().CreateGameWindow(hInstance, "GameWindow");
 	GameEngineWindow::GetInst().ShowGameWindow();
-
-	while (true)
-	{
-		//게임이 돌아간다.
-		_getch();
-	}
+	GameEngineWindow::GetInst().MessageLoop(GameLoop);
 
 	GameEngineWindow::Destroy();
 }

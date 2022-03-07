@@ -14,7 +14,7 @@ public:
 	}
 	inline static void Destroy()
 	{
-		if (nullptr == Inst_)
+		if (nullptr != Inst_)
 		{
 			delete Inst_;
 			Inst_ = nullptr;
@@ -25,13 +25,22 @@ public:
 	void RegClass(HINSTANCE _hInst);
 	void CreateGameWindow(HINSTANCE _hInst, const std::string& _Title);
 	void ShowGameWindow();
+	void MessageLoop(void(*_LoopFunction)());
+	void Off();
+
+	static inline HDC GETDC()
+	{
+		return Inst_->hDC_;
+	}
 
 protected:
 
 private:
+	std::string Title_;
+	bool windowOn_;
 	HINSTANCE hInst_;
 	HWND hWnd_;
-	std::string Title_;
+	HDC hDC_;
 	
 	// constrcuter destructer
 	GameEngineWindow();
@@ -42,5 +51,4 @@ private:
 	GameEngineWindow(GameEngineWindow&& _Other) noexcept = delete;
 	GameEngineWindow& operator=(const GameEngineWindow& _Other) = delete;
 	GameEngineWindow& operator=(GameEngineWindow&& _Other) noexcept = delete;
-};
-
+}; 
