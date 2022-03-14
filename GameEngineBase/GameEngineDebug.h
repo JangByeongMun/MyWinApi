@@ -21,7 +21,6 @@ private:
 	GameEngineDebug(GameEngineDebug&& _Other) noexcept = delete;
 	GameEngineDebug& operator=(const GameEngineDebug& _Other) = delete;
 	GameEngineDebug& operator=(GameEngineDebug&& _Other) noexcept = delete;
-
 };
 
 #define MsgBoxAssert(Text) 	MessageBeep(0); \

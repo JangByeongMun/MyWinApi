@@ -25,6 +25,12 @@
     <ProjectReference Include="..\GameEngineBase\GameEngineBase.vcxproj">
       <Project>{7f36371d-fbd7-4d45-8bd9-8ffd1a58e2d6}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\GameEngineContents\GameEngineContents.vcxproj">
+      <Project>{275b4e85-f6c7-4ca9-92f0-a7448104d5a2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\GameEngine\GameEngine.vcxproj">
+      <Project>{51fc394c-775f-4da6-95b6-fc30b17980e5}</Project>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

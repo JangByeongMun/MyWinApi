@@ -80,7 +80,7 @@ void GameEngineWindow::ShowGameWindow()
     UpdateWindow(hWnd_);
 }
 
-void GameEngineWindow::MessageLoop(void(*_LoopFunction)())
+void GameEngineWindow::MessageLoop(void(*_InitFunction)(), void(*_LoopFunction)())
 {
     MSG msg;
 
