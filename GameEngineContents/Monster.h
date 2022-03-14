@@ -1,6 +1,6 @@
 #pragma once
 
-// 설명 :
+// 설명 : 몬스터들 기본
 class Monster
 {
 public:

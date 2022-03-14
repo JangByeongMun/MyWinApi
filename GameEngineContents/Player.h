@@ -1,6 +1,6 @@
 #pragma once
 
-// 설명 :
+// 설명 : 플레이어
 class Player
 {
 public:

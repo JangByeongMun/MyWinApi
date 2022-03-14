@@ -158,7 +158,15 @@
       <SubType>
       </SubType>
     </ClInclude>
+    <ClInclude Include="Bomb.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="Credit.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="DeadReason.h">
       <SubType>
       </SubType>
     </ClInclude>
@@ -166,7 +174,31 @@
       <SubType>
       </SubType>
     </ClInclude>
+    <ClInclude Include="Familiar.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="LoadingLevel.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="Monster.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Obstruction.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Option.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="PassiveItem.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="PickableObject.h">
       <SubType>
       </SubType>
     </ClInclude>
@@ -175,6 +207,14 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="PlayLevel.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Projectile.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Shooter.h">
       <SubType>
       </SubType>
     </ClInclude>
@@ -192,7 +232,15 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="Bomb.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="Credit.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="DeadReason.cpp">
       <SubType>
       </SubType>
     </ClCompile>
@@ -200,7 +248,31 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="Familiar.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="LoadingLevel.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="Monster.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Obstruction.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Option.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="PassiveItem.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="PickableObject.cpp">
       <SubType>
       </SubType>
     </ClCompile>
@@ -209,6 +281,14 @@
       </SubType>
     </ClCompile>
     <ClCompile Include="PlayLevel.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Projectile.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+    <ClCompile Include="Shooter.cpp">
       <SubType>
       </SubType>
     </ClCompile>
