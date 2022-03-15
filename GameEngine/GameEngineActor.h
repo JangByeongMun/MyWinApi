@@ -1,12 +1,16 @@
 #pragma once
+#include <GameEngineBase/GameEngineNameObject.h>
+#include <GameEngineBase/GameEngineMath.h>
 
 // Ό³Έν :
-class GameEngineActor
+class GameEngineLevel;
+class GameEngineActor : public GameEngineNameObject
 {
+	friend GameEngineLevel;
 public:
 	// constrcuter destructer
 	GameEngineActor();
-	~GameEngineActor();
+	virtual ~GameEngineActor();
 
 	// delete Function
 	GameEngineActor(const GameEngineActor& _Other) = delete;
@@ -15,8 +19,18 @@ public:
 	GameEngineActor& operator=(GameEngineActor&& _Other) noexcept = delete;
 
 protected:
+	virtual void Start()  {}
+	virtual void Update() {}
+	virtual void Render() {}
 
 private:
+	GameEngineLevel* level_;
+	float4 position_;
+	float4 scale_;
 
+	inline void SetLevel(GameEngineLevel* _level)
+	{
+		level_ = _level;
+	}
 };
 

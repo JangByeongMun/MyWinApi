@@ -1,7 +1,8 @@
 #pragma once
+#include "GameEngine/GameEngineLevel.h"
 
 // 설명 : 아이작에서 층마다 넘어갈때의 화면
-class LoadingLevel
+class LoadingLevel : public GameEngineLevel
 {
 public:
 	// constrcuter destructer
@@ -15,6 +16,11 @@ public:
 	LoadingLevel& operator=(LoadingLevel&& _Other) noexcept = delete;
 
 protected:
+	void Loading() override;
+	void Update() override;
+
+	void SceneChangeStart() override;
+	void SceneChangeEnd() override;
 
 private:
 

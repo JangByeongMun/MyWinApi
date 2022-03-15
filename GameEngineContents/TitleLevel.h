@@ -19,7 +19,10 @@ protected:
 	void Loading() override;
 	void Update() override;
 
-private:
+	void SceneChangeStart() override;
+	void SceneChangeEnd() override;
 
+private:
+	
 };
 

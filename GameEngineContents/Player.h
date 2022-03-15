@@ -1,7 +1,8 @@
 #pragma once
+#include "GameEngine/GameEngineActor.h"
 
 // 설명 : 플레이어
-class Player
+class Player : public GameEngineActor
 {
 public:
 	// constrcuter destructer
